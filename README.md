@@ -36,4 +36,4 @@ Before running this tool, you must complete the configuration in main.py. The pa
 - ***result_file***: The absolute path of the result file.
 - ***support_filter***: The pattern support threshold for the test batch.
 
-Now, you can run the tool by executing ·python3 main.py·.
+Now, you can run the tool by executing `python3 main.py`.
