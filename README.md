@@ -2,9 +2,9 @@
 
 ## Abstract
 
-LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software systems and check their violations to detect potential bugs. By leveraging large code models and word embeddings, we rank and filter violations of rare patterns based on contextual semantics, highlighting the interesting ones.
+LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software systems and check their violations to detect potential bugs. By leveraging large code models and word embeddings, we rank and filter violations of rare patterns based on contextual semantics, highlighting the interesting ones. This project contain two files as follows.
 
-## Data
+## Data (DataShare.zip)
 
 There are eight HTML files in the DataShare.zip. They are the Linux Kernel bug reports in eight different pattern support levels. Each report contains multiple pattern violations. The key elements in the bug report are shown as follows.
 
@@ -17,7 +17,7 @@ There are eight HTML files in the DataShare.zip. They are the Linux Kernel bug r
 - ***# most_similar_sup_func***: Information about the function that supports the code pattern.
 
 
-## SourceCode
+## SourceCode (SourceCode.zip)
 
 ### Environment
 
