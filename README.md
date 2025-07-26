@@ -6,7 +6,7 @@ LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software s
 
 ## Data (DataShare.zip)
 
-There are eight HTML files in the DataShare.zip. They are the Linux Kernel bug reports in eight different pattern support levels. Each report contains multiple pattern violations. The key elements in the bug report are shown as follows.
+There are eight HTML files in the DataShare.zip. They are the Linux Kernel bug reports in eight different pattern support levels. Each report contains corresponding pattern violations. The key elements in the bug report are shown as follows.
 
 - ***vio-rank***: The rank of a pattern violation based on contextual semantics. Those without a vio-rank are the false positives found by antonym functions or variant functions detection.
 - ***pattern***: The code pattern which the violation breaks.
