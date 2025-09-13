@@ -2,7 +2,7 @@
 
 ## Abstract
 
-LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software systems and check their violations to detect potential bugs. By leveraging large code models and word embeddings, we rank and filter violations of rare patterns based on contextual semantics, highlighting the interesting ones. This project contain three ziped files as follows.
+LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software systems and check their violations to detect potential bugs. By leveraging large code models and word embeddings, we rank and filter violations of rare patterns based on contextual semantics, highlighting the interesting ones. This project contain two ziped files as follows. We also provide the way to prepare the target project at the end of this README.
 
 ## Result (Result.zip)
 
@@ -16,16 +16,6 @@ There are eight HTML files in the Result.zip. They are the Linux Kernel bug repo
 - ***vio_func_name***: The name of the function containing the violation.
 - ***# most_similar_sup_func***: Information about the function that supports the code pattern.
 
-## Target Project (linux-6.12.1)
-
-We use the Linux Kernel v6.12.1 as the target project. LTMiner processes LLVM pass on bitcode files(*.bc) to detect bugs. However, we failed to upload all the bitcode files since it is extremely large in size (**19.38GB**). Therefore, we recommand you that use WLLVM to compile the kernel and get the bitcode files. You can conduct WLLVM using following commands:
-
-```
-pip install wllvm
-export LLVM_COMPILER=clang
-make CC=clang allyesconfig
-make CC=wllvm LLVM=1
-```
 
 ## SourceCode and Data (LTMiner.zip)
 
@@ -45,15 +35,15 @@ make CC=wllvm LLVM=1
 As shown below, LTMiner contain two main sub-directory: Code and DataShare. All the souce code files of LTMiner are in Code directory, and all the intermediate data files are in DataShare directory.
 
 In Code directory:
-- **LLM** contains prompt template file.
-- **Pass** contains LLVM pass that is used to generate DDGs.
-- **RuleGen** contains data processing and violation detection programes.
-- **utils** contains fp-close mining programe.
+- **LLM:** the prompt template file.
+- **Pass:** the LLVM pass that is used to extract transactions from DDGs.
+- **RuleGen:** the data processing and violation detection programes.
+- **utils:** the fp-close mining programe.
 
 In DataShare directory:
-- **Model** contains the word embedding model.
-- **Passresult** contains the result of LLVM pass.
-- **Rules** contains patterns and violations. 
+- **Model:** the word embedding model.
+- **Passresult:** extracted transactions.
+- **Rules:** mined patterns and violations. 
 
 ### Prepare Environment
 
@@ -70,4 +60,16 @@ Before running this tool, you must complete the configuration in Code/RuleGen/ma
 - ***result_file***: The absolute path of the result file. It is an optional parameter, the default value is "Rules/proj_name" dir.
 
 Now, you can run the tool by executing `python3 main.py`. The result will be in previously defined <***result_file***>.
+
+
+## Target Project (linux-6.12.1)
+
+We use the Linux Kernel v6.12.1 as the target project. LTMiner processes LLVM pass on bitcode files(*.bc) to detect bugs. However, we failed to upload all the bitcode files since it is extremely large in size (**19.38GB**). Therefore, we recommand you that use WLLVM to compile the kernel and get the bitcode files. You can conduct WLLVM using following commands:
+
+```
+pip install wllvm
+export LLVM_COMPILER=clang
+make CC=clang allyesconfig
+make CC=wllvm LLVM=1
+```
 
