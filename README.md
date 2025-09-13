@@ -36,9 +36,9 @@ As shown below, LTMiner contain two main sub-directory: Code and DataShare. All 
 
 In Code directory:
 - **LLM:** the prompt template file.
-- **Pass:** the LLVM pass that is used to extract transactions from DDGs.
-- **RuleGen:** the data processing and violation detection programes.
-- **utils:** the fp-close mining programe.
+- **Pass:** the LLVM pass that is used to extract transactions from code.
+- **RuleGen:** the data processing and violation detection programs.
+- **utils:** the fp-close mining program.
 
 In DataShare directory:
 - **Model:** the word embedding model.
@@ -72,4 +72,5 @@ export LLVM_COMPILER=clang
 make CC=clang allyesconfig
 make CC=wllvm LLVM=1
 ```
+
 
