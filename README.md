@@ -17,7 +17,7 @@ There are eight HTML files in the Result.zip. They are the Linux Kernel bug repo
 - ***# most_similar_sup_func***: Information about the function that supports the code pattern.
 
 
-## SourceCode and Data (LTMiner.zip)
+## Programs and Data (LTMiner.zip)
 
 ### Directory Structure
 
@@ -72,5 +72,6 @@ export LLVM_COMPILER=clang
 make CC=clang allyesconfig
 make CC=wllvm LLVM=1
 ```
+
 
 
