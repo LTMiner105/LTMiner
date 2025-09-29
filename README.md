@@ -1,8 +1,22 @@
 # LTMiner
 
 ## Abstract
+LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software systems and check their violations to detect potential bugs. By leveraging large code models and word embeddings, we rank and filter violations of rare patterns based on contextual semantics, highlighting the interesting ones. This project contain two ziped files as follows. 
 
-LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software systems and check their violations to detect potential bugs. By leveraging large code models and word embeddings, we rank and filter violations of rare patterns based on contextual semantics, highlighting the interesting ones. This project contain two ziped files as follows. We also provide the way to prepare the target project at the end of this README.
+We also provide the way to prepare the target project at the end of this README.
+
+## Project Publications
+- ***Github***: https://github.com/LTMiner105/LTMiner
+- ***Anonymous4Open***: https://anonymous.4open.science/r/LTMiner-451A/
+
+## Download Large Files
+Please note that the two zip files (Result.zip and LTMiner.zip) are stored using Git LFS (Large File Storage) due to their large size. These files cannot be downloaded through the standard git clone command. To access these files:
+
+- Click on each zip file in the GitHub repository page
+- Click the "Download" button to manually download each file
+- Extract the downloaded zip files to their appropriate locations as described in this README
+
+After downloading and extracting both zip files, you can proceed with setting up the environment and running LTMiner as described below.
 
 ## Result (Result.zip)
 
@@ -72,6 +86,7 @@ export LLVM_COMPILER=clang
 make CC=clang allyesconfig
 make CC=wllvm LLVM=1
 ```
+
 
 
 
