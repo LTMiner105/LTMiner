@@ -7,7 +7,7 @@ We also provide the way to prepare the target project at the end of this README.
 
 ## Project Publications
 - ***Anonymous4Open***: https://anonymous.4open.science/r/LTMiner-451A/
-- ***GitHub***: Our GitHub repo shares the same name as this README title and also remains anonymous.
+- ***GitHub***: Our GitHub repo shares the same name as the README title and also remains anonymous.
 
 ## Download Large Files
 Please note that the two zip files (Result.zip and LTMiner.zip) are stored using Git LFS (Large File Storage) due to their large size. These files cannot be downloaded through the standard git clone command. To access these files:
@@ -86,6 +86,7 @@ export LLVM_COMPILER=clang
 make CC=clang allyesconfig
 make CC=wllvm LLVM=1
 ```
+
 
 
 
