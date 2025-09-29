@@ -6,7 +6,7 @@ LTMiner (Long Tail Miner) aims to mine rare patterns from large-scale software s
 We also provide the way to prepare the target project at the end of this README.
 
 ## Project Publications
-- ***GitHub***: https://github.com/LTMiner105/LTMiner
+- ***GitHub***: LTMiner105/LTMiner
 - ***Anonymous4Open***: https://anonymous.4open.science/r/LTMiner-451A/
 
 ## Download Large Files
@@ -86,6 +86,7 @@ export LLVM_COMPILER=clang
 make CC=clang allyesconfig
 make CC=wllvm LLVM=1
 ```
+
 
 
 
